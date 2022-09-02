@@ -18,9 +18,10 @@ nav{
 
 
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  margin: 40px 255px 0px 81px;
+  justify-content: space-between;
+  margin: 40px 80px 0px 81px;
+
 }
 
 .nav-logo{
@@ -47,25 +48,30 @@ nav{
   font-size: 12px;
 }
 
-/* ....................................DESIGNER section................................................ */
+.ham{
+  width: 50px;
+  display: none;
+}
+
+/* Designer Section */
 
 
 .designer-section{
   display: flex;
   flex-wrap: wrap;
+  justify-content:center;
   align-items: center;
   
 
 }
 
 .image-section{
-     width: 50%;
+     width: 45%;
      
 }
 .image-section img{
-   width: 80%;
-   float: right;
-   margin-bottom: 5px;
+   width: 100%;
+   height: 500px;
 
 }
 
@@ -79,11 +85,10 @@ nav{
    font-size: 20px;
 }
 .content-section h2{
-  font-size: 5em;
+  font-size: 4rem;
 }
 .content-section div{
-  width: 60%;
-  text-align: justify;
+  width: 80%;
   margin-bottom: 20px;
 }
 
@@ -99,6 +104,8 @@ nav{
   border: none;
 }
 
+/* SERVICE SECTION */
+
 .services-section{
   
   background-image: linear-gradient(to right,#292828 0% ,#292828 50%,#171616 50% ,#171616 100% );
@@ -111,7 +118,9 @@ nav{
 
 .services-cards{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
     /* padding-bottom: 30px; */
     
 }
@@ -120,7 +129,7 @@ nav{
   width: 22%;
   
   padding: 10px 12px 10px 20px;
-  margin: 40px 20px ;
+  margin-block: 5%;
   
 }
 .card-grey{
@@ -163,6 +172,7 @@ nav{
   margin-bottom: 20px;
 }
 
+/* Experience Section */
 
 
 .exp-section{
@@ -207,35 +217,39 @@ font-size: 40px;
 
 .exp-section .left-section .card{
   width: 30% ;
-  /* width: 10vw; */
   background-color: #302e2e;
   padding: 10px 30px;
   margin: 5px 5px ;
   text-align: center;
 }
 
+/* Project Section */
+
+
 .Project-section{
-  margin: 50px 150px;
+  margin-block: 40px;
 }
 .top{
- 
-  margin: 40px 0px;
-  padding-left: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  align-items: center;
+  width: 80%;
+  margin-inline: auto;
+
 }
 .Project-section .top h2{
   color: white;
   font-size: 25px;
-  /* margin-top: 20px; */
+
 }
 .Project-section .top p{
   color: white;
   font-size: 15px;
-  /* margin-top: 20px; */
+
 }
 .Project-section .top button{
-  float: right;
-  margin-right: 195px;
-  margin-top: -29px;
+ 
   padding: 10px 40px ;
   background-color: #f91638;
   color: white;
@@ -247,10 +261,14 @@ font-size: 40px;
 .middle{
   display: flex;
   flex-wrap: wrap;
-  /* justify-content:center; */
+  width: 100%;
+  margin-inline: auto;
+  justify-content:center;
+  gap: 20px;
+  
 }
 .middle .card{
-  width: 43%;
+  width: 40%;
   margin: 5px 15px;
 }
 .middle .card h4{
@@ -267,9 +285,10 @@ font-size: 40px;
   display: flex;
   flex-wrap: wrap;
   background-color: #302e2e;
-  margin: 20px 162px;
+  padding-block: 20px;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 
 }
 
@@ -281,7 +300,7 @@ font-size: 40px;
 
 .bottom .left-section h2{
   color: white;
-  font-size: 50px;
+  font-size: 3rem;
 }
 .bottom .left-section p{
   color: white;
@@ -301,13 +320,15 @@ font-size: 40px;
 .bottom-nav{
  
  display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
   
  
 }
 .bottom-nav ul{
-  
+
   list-style-type: none;
-  margin: 102px 560px;
+  padding-block: 10%;
 }
 
 .bottom-nav ul li{
@@ -337,4 +358,178 @@ font-size: 40px;
 }
 .footer-nav img{
   padding: 0px 20px ;
+}
+
+
+
+@media only screen  and (max-width:1170px){
+  /* Designer Section */
+
+   .image-section img{
+    width: 100%;
+    height: 350px;
+ 
+    }
+    .content-section{
+      margin-bottom: 30px;
+    }
+    .content-section h2{
+        font-size: 2.8rem;
+      }
+
+
+      /* SERVICE SECTION */
+
+      .card-grey img,  .card-red img{
+        width: 3em;
+        padding: 0px;
+      }
+      .card h2{
+        color: white;
+        font-size: 15px;
+        padding: 5px 0px ;
+      }
+      .card div p{
+       
+        font-size: 10px;
+        padding: 5px 0px ;
+      }
+      .card-grey h4{
+        color: #f91638;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      .card-red h4{
+        color :white;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+
+
+      
+    /* Project Section */
+
+    
+
+
+
+}
+
+
+
+
+
+@media only screen and (max-width:814px) {
+    /*  NAV BAR SECTION   */
+    
+    nav{
+        margin-inline: 20px ;
+    }
+    .nav-bar{
+        display: none;
+
+    }
+    .ham{
+        display: inline-block;
+    }
+
+
+    /* Designer SECTION */
+
+    .designer-section{
+        flex-direction: column;
+      }
+
+      .image-section{
+        width: 80%;
+        
+   }
+      
+    .image-section img{
+        width: 100%;
+        height: 300px;
+    
+    }
+
+    .content-section{
+        width: 95%;
+        text-align: center;
+      }
+      .content-section div{
+        width: 95%;
+        margin-bottom: 20px;
+      }
+
+      /* Service Section */
+      
+      .exp-section .left-section .card{
+    width: 30% ;
+    background-color: #302e2e;
+    padding: 10px 20px;
+    margin: 5px 5px ;
+    text-align: center;
+  }
+  
+      /* Exp Section */
+.card{
+    width: 250px;
+    margin-block: 10px;
+    
+  }
+
+  /* Project section */
+
+  .top{
+    flex-direction: column;
+    text-align: center;
+    width: 95%;
+    margin-inline:auto;
+    gap: 20px;
+  
+  }
+  .middle .card{
+    width: 300px;
+    margin: 5px 15px;
+  }
+  .middle .card img{
+   
+    padding: 40px 10px;
+  }
+
+  .bottom .left-section{
+    width: 100%;
+    text-align:center;
+    padding: 40px 13px;
+ }
+ .bottom .left-section h2{
+    color: white;
+    font-size: 2rem;
+  }
+ .bottom .right-section{
+    width: 100%;
+    text-align: center;
+  }
+  .bottom-nav ul li{
+    float: left;
+    padding: 0px 7px;
+    color: white;
+    font-size: 14px;
+  }
+
+  .footer-section{
+   
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    
+  }
+  
+.footer-logo{
+    width: 100%;
+    /* margin-left: 20px; */
+  }
+  
+  .footer-nav{
+    width: 100%;
+  }
 }
